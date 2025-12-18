@@ -1,11 +1,10 @@
+
 #include<iostream>
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
-}
 
-int main(){
+   int main(){
 	//Test Case
 	cout << before('A') << "\n";
 	cout << before('B') << "\n";
@@ -16,4 +15,22 @@ int main(){
 	cout << before('0') << "\n";
 	cout << before('c') << "\n";
 	return 0;
+}
+
+  if (x == 'A'){
+    x = 'Z';
+   return x;
+  }
+   else{
+       if (x >='B' && x <= 'Z'  ){
+    x = x-1;
+    return x;
+   }
+    else{
+        x='0';
+     
+     return x;
+        
+    }
+   }
 }
